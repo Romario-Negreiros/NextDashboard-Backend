@@ -1,5 +1,3 @@
-import Express from 'express'
+import app from './App'
 
-const app = Express()
-
-app.listen(3434, () => console.log("Listening on port: 3434"))
+app.listen(3434, () => console.log('Listening on port: 3434'))
