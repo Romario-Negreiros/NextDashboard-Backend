@@ -1,0 +1,11 @@
+nodemon config
+http://adilapapaya.com/docs/nodemon/#configfiles
+
+spread syntax iterator problem ts
+https://bobbyhadz.com/blog/typescript-type-object-must-have-symbol-iterator-method
+
+query interface api
+https://sequelize.org/api/v6/class/src/dialects/abstract/query-interface.js~queryinterface
+
+git ignore exception
+https://stackoverflow.com/questions/3203228/git-ignore-exception
