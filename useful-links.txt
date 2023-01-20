@@ -9,3 +9,6 @@ https://sequelize.org/api/v6/class/src/dialects/abstract/query-interface.js~quer
 
 git ignore exception
 https://stackoverflow.com/questions/3203228/git-ignore-exception
+
+delay on nodemon server restart
+https://dev.to/iarehilton/nodemon-delay-102a
