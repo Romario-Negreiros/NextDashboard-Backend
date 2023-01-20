@@ -17,7 +17,6 @@ class User extends Model {
 }
 
 User.init({
-  id: DataTypes.INTEGER,
   institute: DataTypes.STRING,
   email: DataTypes.STRING,
   name: DataTypes.STRING,
