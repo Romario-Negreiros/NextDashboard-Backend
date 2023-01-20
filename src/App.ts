@@ -11,11 +11,11 @@ class App {
     this.express = express()
 
     this.database()
-    this.routes()
     this.middlewares()
+    this.routes()
   }
 
-  private async database (): Promise<void> {
+  private async database () {
     try {
       await db.sync()
     } catch (err) {
@@ -23,13 +23,13 @@ class App {
     }
   }
 
-  private async routes (): Promise<void> {
-    this.express.use(routes)
-  }
-
-  private async middlewares (): Promise<void> {
+  private middlewares () {
     this.express.use(express.json())
     this.express.use(cors())
+  }
+
+  private routes () {
+    this.express.use(routes)
   }
 }
 
