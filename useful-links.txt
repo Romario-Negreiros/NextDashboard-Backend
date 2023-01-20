@@ -12,3 +12,6 @@ https://stackoverflow.com/questions/3203228/git-ignore-exception
 
 delay on nodemon server restart
 https://dev.to/iarehilton/nodemon-delay-102a
+
+mailgun email templates
+https://www.mailgun.com/blog/email/transactional-html-email-templates/
