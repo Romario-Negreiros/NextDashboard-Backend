@@ -15,3 +15,12 @@ https://dev.to/iarehilton/nodemon-delay-102a
 
 mailgun email templates
 https://www.mailgun.com/blog/email/transactional-html-email-templates/
+
+new mailgun js sdk
+https://www.npmjs.com/package/mailgun.js
+
+juice npm's page
+https://www.npmjs.com/package/juice
+
+ejs npm's page
+https://www.npmjs.com/package/ejs
