@@ -24,3 +24,6 @@ https://www.npmjs.com/package/juice
 
 ejs npm's page
 https://www.npmjs.com/package/ejs
+
+regEx info
+https://javascript.info/regexp-introduction
