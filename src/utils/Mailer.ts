@@ -1,5 +1,4 @@
 import fs from 'fs'
-import path from 'path'
 import juice from 'juice'
 import ejs from 'ejs'
 import dotEnv from 'dotenv'
@@ -21,7 +20,7 @@ class Mailer {
     if (fs.existsSync(pathToTemplate)) {
       const template = fs.readFileSync(pathToTemplate, 'utf-8')
       const html = juice(ejs.render(template, { ...templateVars, to }))
-      const response = await mg.messages.create(domain as string, {
+      await mg.messages.create(domain as string, {
         from: process.env.MAILGUN_EMAIL,
         to,
         subject,
