@@ -27,3 +27,6 @@ https://www.npmjs.com/package/ejs
 
 regEx info
 https://javascript.info/regexp-introduction
+
+jsonwebtoken npm's page
+https://www.npmjs.com/package/jsonwebtoken
