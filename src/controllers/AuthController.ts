@@ -34,7 +34,7 @@ class AuthController {
       })
 
       await mailer.send([user.email], 'Account Creation', 'verifyEmail', {
-        link: `http://localhost:3434/actions/verifyEmail/${user.id}/${verifyEmailToken}`,
+        link: `http://localhost:3434/verify-email/${user.id}/${verifyEmailToken}`,
         name: user.name
       })
 
