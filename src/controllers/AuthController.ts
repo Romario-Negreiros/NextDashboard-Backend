@@ -59,8 +59,8 @@ class AuthController {
     }
 
     try {
-      const { email, token } = req.params
-      const user = await User.findOne({ where: { email } })
+      const { id, token } = req.params
+      const user = await User.findByPk(id)
       const now = new Date()
 
       if (!user) {
@@ -93,7 +93,7 @@ class AuthController {
       await user.save({ hooks: false })
 
       // expirationTime: 86400 seconds = 1 day
-      const jwt = generateJwt({ id: user.id, email: user.email }, 86400)
+      const jwt = generateJwt({ id, email: user.email }, 86400)
 
       return res.status(200).json({ ...user.dataValues, pwd: null, jwt })
     } catch (err) {
