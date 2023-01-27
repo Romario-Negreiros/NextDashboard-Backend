@@ -95,7 +95,7 @@ class AuthController {
       // expirationTime: 86400 seconds = 1 day
       const jwt = generateJwt({ id, email: user.email }, 86400)
 
-      return res.status(200).json({ ...user.dataValues, pwd: null, jwt })
+      return res.status(200).json({ user: { ...user.dataValues }, pwd: null, jwt })
     } catch (err) {
       return res.status(500).json({ error: 'Internal server error, please try again!' })
     }
