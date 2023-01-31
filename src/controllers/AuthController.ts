@@ -38,7 +38,7 @@ class AuthController {
         name: user.name
       })
 
-      return res.status(201).json({ ...user.dataValues, pwd: undefined })
+      return res.status(201).json()
     } catch (err) {
       if (await User.findOne({ where: { email: req.body.email } })) {
         await User.destroy({ where: { email: req.body.email } })
